@@ -17,9 +17,8 @@ let package = Package(
     targets: [
         .target(
             name: "YouTubePlayerKit",
-            path: "Sources",
             resources: [
-                .process("./Resources/YouTubePlayer.html")
+                .copy("Resources/YouTubePlayer.html")
             ]
         ),
         .testTarget(
